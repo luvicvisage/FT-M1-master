@@ -15,8 +15,7 @@ function DecimalABinario(num) {
 let numero = num;
 let newArray = [];
 while (numero / 2 > 0) {
-  let resto = numero % 2;
-  newArray.unshift(resto);
+  newArray.unshift(numero % 2);
   numero = Math.floor(numero/2);
 }
 
